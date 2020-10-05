@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.d("LOGNYA", "onCreate()")
+        Log.d("Create", "onCreate()")
 
         // Start function when start button pressed, and resume time when pause button pressed
         // Interrupt the thread to pause the timer
