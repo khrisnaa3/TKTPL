@@ -32,13 +32,11 @@ public class SecondFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         editText = view.findViewById(R.id.textview_second);
-        textView = view.findViewById(R.id.textView2);
 
         view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 viewModel.setText(editText.getText());
-//                viewModel.setText(textView.setText(editText.getText()));
 
                 NavHostFragment.findNavController(SecondFragment.this)
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);

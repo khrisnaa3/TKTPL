@@ -39,7 +39,6 @@ public class FirstFragment extends Fragment {
             public void onClick(View view) {
 
                 viewModel.setText(editText.getText());
-                textView.setText(editText.getText());
 
                 NavHostFragment.findNavController(FirstFragment.this)
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
@@ -55,6 +54,7 @@ public class FirstFragment extends Fragment {
             @Override
             public void onChanged(CharSequence charSequence) {
                 editText.setText(charSequence);
+                textView.setText(charSequence);
             }
         });
     }

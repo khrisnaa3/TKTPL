@@ -34,7 +34,7 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="127dp"
         android:layout_marginRight="127dp"
-        android:text="Updated Text Fragment 1"
+        android:text="Updated Text Between 2 Fragments"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_first" />
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="205dp"
         android:layout_marginLeft="205dp"
-        android:layout_marginTop="373dp"
+        android:layout_marginTop="355dp"
         android:layout_marginEnd="206dp"
         android:layout_marginRight="206dp"
         app:layout_constraintEnd_toEndOf="parent"
