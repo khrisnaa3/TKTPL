@@ -9,14 +9,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var counter = 0
         tombol.setOnClickListener {
-            counter++
-            if (counter%2 == 0) {
-                teks.setText("I'm Khrisna")
-            } else {
-                teks.setText("Hello World!")
+            if (!editText.text.isNullOrEmpty()) {
+                val number = editText.text.toString().toDouble()
+                tvRes.text = logCalculation(number).toString()
             }
+        }
+    }
+
+    private external fun logCalculation(number: Double): Double
+
+    companion object {
+        init {
+            System.loadLibrary("cpp_code")
         }
     }
 }
