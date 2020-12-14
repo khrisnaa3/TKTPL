@@ -12,11 +12,7 @@ class MainActivity : AppCompatActivity() {
         var counter = 0
         tombol.setOnClickListener {
             counter++
-            if (counter%2 == 0) {
-                teks.setText("I'm Khrisna")
-            } else {
-                teks.setText("Hello World!")
-            }
+            tv.setText(counter.toString())
         }
     }
 }

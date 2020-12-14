@@ -27,8 +27,24 @@
         android:layout_marginEnd="161dp"
         android:layout_marginRight="161dp"
         android:layout_marginBottom="177dp"
-        android:text="Click Me!"
+        android:text="Count Me"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teks" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:layout_marginBottom="89dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/tombol"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/teks" />
